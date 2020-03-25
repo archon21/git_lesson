@@ -7,7 +7,7 @@ $('.uk-button').click(function(event) {
   const lon = $(this).attr('longitude');
   const lat = $(this).attr('latitude');
   const id = $(this).attr('id');
-  const url = `https://developers.zomato.com/api/v2.1/search?entity_id=280&entity_type=city&q=${id}&count=5&lat=${lat}&lon=-${lon}&sort=real_distance&apikey=b12fbdce2dfa854d91ec1e69686e185c`
+  const url = `https://developers.zomato.com/api/v2.1/search?entity_id=280&entity_type=city&q=${id}&count=5&lat=${lat}&lon=-${lon}&sort=real_distance&apikey=`
   console.log(lat, lon);
   $.ajax({
     method: 'GET',
